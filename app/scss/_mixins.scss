@@ -1,0 +1,23 @@
+//Первые 3 аргумента, для display: flex, остальные 3 для display: box (поддержка сафари)
+@mixin flexBox($justifyContent:flex-start, $box-pack: start, $alignItems:center, $box-align: center, $direction:initial, $box-orient: horizontal) {
+  display: flex;
+  justify-content: $justifyContent;
+  -webkit-box-pack: $box-pack;
+  align-items: $alignItems;
+  -webkit-box-align: $box-align;
+  flex-direction: $direction;
+  -webkit-box-orient: $box-orient;
+}
+
+// -webkit-box-pack
+// — start, end – аналог flex-start, flex-end;
+// — justify – аналог space-between;
+// — center – то же, что и center в новом.
+
+// -webkit-box-align
+// — start, end – аналог flex-start, flex-end.
+// Остальные свойства идентичны 
+
+// -webkit-box-orient
+// — vertical – колонка;
+// — horizontal – строка.

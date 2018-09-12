@@ -1,0 +1,80 @@
+@import '../_vars', '../_mixins';
+
+.doc {
+
+  &__nav {
+    @include flexBox();
+    color: #738194;
+    font-size: 20px;
+
+    a {
+      text-decoration: none;
+      color: #738194;
+
+      &:hover { text-decoration: underline; }
+    }
+
+    &-arrow {
+      margin: 0 20px;
+
+      &:before {
+        position: relative;
+        top: 2px;
+        display: block;
+        content: '';
+        height: 14px;
+        width: 2px;
+        background: #738194;
+        transform: rotate(-40deg);
+      }
+
+      &:after {
+        position: relative;
+        bottom: 2px;
+        display: block;
+        content: '';
+        height: 14px;
+        width: 2px;
+        background: #738194;
+        transform: rotate(40deg);
+      }
+    }
+  }
+
+  &__content {
+    margin-left: 39px;
+    max-width: 1120px;
+    color: #2b334a;
+    font-size: 18px;
+
+    p {
+      margin-top: 28px;
+      color: #000;
+    }
+
+    li {
+      margin-top: 16px;
+      color: $red;
+      font-size: 20px;
+      font-weight: 700;
+
+      ul {
+        margin-top: 16px;
+
+        li {
+          margin: 0;
+          color: #000;
+          font-weight: 500;
+          font-size: 18px;
+        }
+
+        .subtitle {
+          margin: 16px 0;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &-footnote { font-style: italic; }
+  }
+}

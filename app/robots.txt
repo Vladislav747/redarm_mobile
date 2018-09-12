@@ -1,0 +1,8 @@
+HOST: https://redarmmarket.ru
+
+User-agent: *
+Disalow: /css/
+Disalow: /fonts/
+Disalow: /img/
+Disalow: /js/
+Disalow: /phpmysqladministrator/

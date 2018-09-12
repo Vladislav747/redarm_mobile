@@ -1,0 +1,9 @@
+/node_modules/
+/.git/
+/app/css/
+/app/js/libs.min.js
+/app/js/main.min.js
+/**/*.psd
+/**/package-lock.json
+/**/Thumbs.db
+/**/.DS_Store
