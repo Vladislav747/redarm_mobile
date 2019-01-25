@@ -1,3 +1,1 @@
-"# redarm_mobile" 
-"# redarm_mobile" 
-"# redarm_mobile" 
+Мобильная адаптация сайта https://redarmmarket.ru c помощью LESS, SASS, JS с учетом БЭМ Верстки
